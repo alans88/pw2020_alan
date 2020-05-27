@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Bulan Mei 2020 pada 00.11
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.6
+-- Generation Time: May 27, 2020 at 12:13 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data siswa`
+-- Table structure for table `data siswa`
 --
 
 CREATE TABLE `data siswa` (
@@ -35,31 +35,33 @@ CREATE TABLE `data siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `data siswa`
+-- Dumping data for table `data siswa`
 --
 
 INSERT INTO `data siswa` (`id`, `nama siswa`, `alamat`, `kelas`) VALUES
-(1, 'alan', 'bogor', 'tkj');
+(1, 'alan', 'bogor', 'tkj'),
+(2, 'zaenal', 'jakarta', 'mmd'),
+(3, 'abidin', 'surabaya', 'rpl');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `data siswa`
+-- Indexes for table `data siswa`
 --
 ALTER TABLE `data siswa`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `data siswa`
+-- AUTO_INCREMENT for table `data siswa`
 --
 ALTER TABLE `data siswa`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
